@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title %}
+		<title>CMSC 128 - {{title}}</title>
+	{% else %}
+		<title>CMSC 128</title>
+	{% endif %}
+</head>
+<body>
+	<h1>Hello Template!</h1>
+	{% block content %}{% endblock %}
+</body>
+</html>
