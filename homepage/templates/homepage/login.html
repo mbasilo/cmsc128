@@ -1,12 +1,11 @@
 {% extends "homepage/base.html" %}
 
 {% block content %}
-	<h2>Upload test</h2>
-
 	<form method = "post" enctype ="multipart/form-data">
 		{% csrf_token %}
-		<input type="file" name="csv_file">
-		<button type="submit">Upload File</button>
+		<input type="text" name="username">
+		<input type="password" name="password">
+		<input type="email" name="email">
+		<button type="submit">Login</button>
 	</form>
-
 {% endblock content %}
